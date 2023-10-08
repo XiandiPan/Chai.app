@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+Chai Scheduler Home
+{% endblock %}
+
+{% block content %}
+<h2>Home page for Chai scheduler</h2>
+{% for employee in employees%}
+
+    <li>{{employee.first_name}}</li>
+{% endfor%}
+{% endblock content %}
